@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.pixel-industry.com	TRUE	/	FALSE	1999999999	PHPSESSID	c619c51ea63a3dc1cdc9447ad0774515
+pixel-industry.com	TRUE	/	FALSE	1999999999	PHPSESSID	58e7614481d0420addae090b75b24d75
+

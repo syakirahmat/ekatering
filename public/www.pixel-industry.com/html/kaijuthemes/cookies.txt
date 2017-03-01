@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.d3js.org	TRUE	/	FALSE	1999999999	__cfduid	dba6baba501b83cbdc304cd8a879c3b4b1479724911
+.amcharts.com	TRUE	/	FALSE	1999999999	__cfduid	d31f137c2040608e75c7f26777f3bd6471479724927
+upload.wikimedia.org	TRUE	/	FALSE	1999999999	WMF-Last-Access	21-Nov-2016
+

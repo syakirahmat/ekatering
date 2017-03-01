@@ -1,0 +1,63 @@
+HTTrack3.48-21+htsswf+htsjava launched on Mon, 21 Nov 2016 18:25:43 at http://tectonic.kaijuthemes.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://tectonic.kaijuthemes.com/ -O1 "C:\Apache24\htdocs\My Web Sites\kaijuthemes" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+18:43:30	Warning: 	Retry after error -4 (No data (connection closed)) at link tectonic.kaijuthemes.com/extras-profile.html (from tectonic.kaijuthemes.com/)
+18:43:37	Warning: 	Retry after error -4 (Incorrect length (1109764 Bytes, 1625030 expected)) at link tectonic.kaijuthemes.com/assets/demo/stockphoto/kijil.jpg (from tectonic.kaijuthemes.com/assets/css/styles.css)
+18:43:37	Warning: 	Retry after error -4 (Incorrect length (1246944 Bytes, 1736837 expected)) at link tectonic.kaijuthemes.com/assets/demo/stockphoto/ajul.jpg (from tectonic.kaijuthemes.com/assets/css/styles.css)
+18:44:23	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/fonts/artill/artill_clean_icons-webfont.svg (from tectonic.kaijuthemes.com/assets/css/styles.css)
+18:44:23	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/img/icon-bar.png (from tectonic.kaijuthemes.com/assets/css/echartsHome.css)
+18:44:23	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/app-inbox (from tectonic.kaijuthemes.com/app-inbox-compose.html)
+18:45:46	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/pines-notify/jquery.pnotify.default.css (from tectonic.kaijuthemes.com/ui-alerts.html)
+18:45:46	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/pines-notify/jquery.pnotify.min.js (from tectonic.kaijuthemes.com/ui-alerts.html)
+18:45:46	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/scaffolding-grids.php (from tectonic.kaijuthemes.com/ui-forms.html)
+18:45:46	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/datepaginator/bootstrap-datepaginator.css (from tectonic.kaijuthemes.com/custom-datepaginator.html)
+18:45:46	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/bootstrap-datepaginator/bootstrap-datepaginator.js (from tectonic.kaijuthemes.com/custom-datepaginator.html)
+18:46:13	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/form-colorpicker/js/bootstrap-colorpicker.min.js (from tectonic.kaijuthemes.com/form-components.html)
+18:46:19	Error: 	"Forbidden" (403) at link tectonic.kaijuthemes.com/assets/plugins/form-ckeditor/ (from tectonic.kaijuthemes.com/form-ckeditor.html)
+18:46:20	Warning: 	Retry after error -4 (No data (connection closed)) at link upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/23px-Flag_of_the_People%27s_Republic_of_China.svg.png (from tectonic.kaijuthemes.com/tables-responsive.html)
+18:46:23	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/param.data; (from tectonic.kaijuthemes.com/charts-echarts-force.html)
+18:46:23	Warning: 	Retry after error -4 (Connect Error) at link https://www.amcharts.com/lib/3/serial.js (from tectonic.kaijuthemes.com/charts-amcharts-column-bar.html)
+18:46:25	Warning: 	Retry after error -4 (No data (connection closed)) at link https://fullcalendar.io/js/fullcalendar-2.6.0/fullcalendar.min.js (from tectonic.kaijuthemes.com/calendar-fullcalendarv2.html)
+18:46:25	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/layout-horizontal (from tectonic.kaijuthemes.com/layout-horizontal-small.html)
+18:46:25	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/index (from tectonic.kaijuthemes.com/layout-horizontal-small.html)
+18:46:25	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/layout-horizontal-large (from tectonic.kaijuthemes.com/layout-horizontal-large.html)
+18:46:25	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/"http://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Happy_smiley_face.png/240px-Happy_smiley_face.png" (from tectonic.kaijuthemes.com/notification-pines.html)
+18:46:25	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/jstree/dist/themes/Tectonic/style.min.css (from tectonic.kaijuthemes.com/ui-icons.html)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/images/ui-bg_flat_75_ffffff_40x100.png (from tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/jquery-ui.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png (from tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/jquery-ui.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/images/ui-bg_glass_75_e6e6e6_1x400.png (from tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/jquery-ui.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/images/ui-bg_glass_75_dadada_1x400.png (from tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/jquery-ui.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/images/ui-bg_glass_65_ffffff_1x400.png (from tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/jquery-ui.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/images/ui-bg_glass_55_fbf9ee_1x400.png (from tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/jquery-ui.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/images/ui-bg_glass_95_fef1ec_1x400.png (from tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/jquery-ui.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/images/ui-icons_222222_256x240.png (from tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/jquery-ui.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/images/ui-icons_888888_256x240.png (from tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/jquery-ui.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/images/ui-icons_454545_256x240.png (from tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/jquery-ui.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/images/ui-icons_2e83ff_256x240.png (from tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/jquery-ui.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/images/ui-icons_cd0a0a_256x240.png (from tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/jquery-ui.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/images/ui-bg_flat_0_aaaaaa_40x100.png (from tectonic.kaijuthemes.com/assets/plugins/selectBoxIt/css/jquery-ui.css)
+18:46:33	Warning: 	Moved Permanently for upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/23px-Flag_of_the_People%27s_Republic_of_China.svg.png
+18:46:33	Warning: 	Redirected link is identical because of 'URL Hack' option: upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/23px-Flag_of_the_People%27s_Republic_of_China.svg.png and https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/23px-Flag_of_the_People%27s_Republic_of_China.svg.png
+18:46:33	Warning: 	Warning moved treated for upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/23px-Flag_of_the_People%27s_Republic_of_China.svg.png (real one is https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/23px-Flag_of_the_People%27s_Republic_of_China.svg.png)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/images/sort_both.png (from tectonic.kaijuthemes.com/assets/plugins/datatables/dataTables.bootstrap.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/images/sort_asc.png (from tectonic.kaijuthemes.com/assets/plugins/datatables/dataTables.bootstrap.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/images/sort_desc.png (from tectonic.kaijuthemes.com/assets/plugins/datatables/dataTables.bootstrap.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/images/sort_asc_disabled.png (from tectonic.kaijuthemes.com/assets/plugins/datatables/dataTables.bootstrap.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/images/sort_desc_disabled.png (from tectonic.kaijuthemes.com/assets/plugins/datatables/dataTables.bootstrap.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/gridlayout/layout1/images/loading.gif (from tectonic.kaijuthemes.com/assets/plugins/gridlayout/layout1/css/elastic_grid.min.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/gridlayout/layout1/images/nav.png (from tectonic.kaijuthemes.com/assets/plugins/gridlayout/layout1/css/elastic_grid.min.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/kartik-file-uploader/img/loading.gif (from tectonic.kaijuthemes.com/assets/plugins/kartik-file-uploader/css/fileinput.min.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/kartik-file-uploader/img/loading-sm.gif (from tectonic.kaijuthemes.com/assets/plugins/kartik-file-uploader/css/fileinput.min.css)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/gridlayout/layout2/css/demo.css (from tectonic.kaijuthemes.com/gallery-product.html)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/gridlayout/layout2/css/component.css (from tectonic.kaijuthemes.com/gallery-product.html)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/gridlayout/layout2/js/modernizr.custom.js (from tectonic.kaijuthemes.com/gallery-product.html)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/gridlayout/layout2/js/classie.js (from tectonic.kaijuthemes.com/gallery-product.html)
+18:46:33	Error: 	"Not Found" (404) at link tectonic.kaijuthemes.com/assets/plugins/gridlayout/layout2/js/main.js (from tectonic.kaijuthemes.com/gallery-product.html)
+
+HTTrack Website Copier/3.48-21 mirror complete in 20 minutes 51 seconds : 683 links scanned, 632 files written (39484332 bytes overall) [39190692 bytes received at 31327 bytes/sec], 773770 bytes transferred using HTTP compression in 9 files, ratio 33%, 4.1 requests per connection
+(43 errors, 9 warnings, 0 messages)
