@@ -1,3 +1,125 @@
+
+
+<?php
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+
+  $theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? "'" . doubleval($theValue) . "'" : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+
+mysql_select_db($database_katering, $katering);
+$query_Recordset1 = "SELECT tblcaterer.`caterer`, tblcaterer.password FROM tblcaterer";
+$Recordset1 = mysql_query($query_Recordset1, $katering) or die(mysql_error());
+$row_Recordset1 = mysql_fetch_assoc($Recordset1);
+$totalRows_Recordset1 = mysql_num_rows($Recordset1);
+?>
+<?php
+// *** Validate request to login to this site.
+if (!isset($_SESSION)) {
+  session_start();
+}
+
+$loginFormAction = $_SERVER['PHP_SELF'];
+if (isset($_GET['accesscheck'])) {
+  $_SESSION['PrevUrl'] = $_GET['accesscheck'];
+}
+
+if (isset($_POST['name'])) {
+  $loginUsername=$_POST['name'];
+  $password=$_POST['psw'];
+  $MM_fldUserAuthorization = "";
+  $MM_redirectLoginSuccess = "index.php";
+  $MM_redirectLoginFailed = "login.php";
+  $MM_redirecttoReferrer = false;
+  mysql_select_db($database_katering, $katering);
+  
+  $LoginRS__query=sprintf("SELECT user, password FROM tbluser WHERE id=%s AND password=%s",
+    GetSQLValueString($loginUsername, "int"), GetSQLValueString($password, "text")); 
+   
+  $LoginRS = mysql_query($LoginRS__query, $katering) or die(mysql_error());
+$row = mysql_fetch_array($LoginRS);
+$loginFoundUser = mysql_num_rows($LoginRS);
+
+if($loginFoundUser>0){
+$_SESSION['id'] = $row['id'];
+      
+
+    if (isset($_SESSION['PrevUrl']) && false) {
+      $MM_redirectLoginSuccess = $_SESSION['PrevUrl'];  
+    }
+    header("Location: " . $MM_redirectLoginSuccess );
+  }
+  else {
+    header("Location: ". $MM_redirectLoginFailed );
+  }
+}
+
+?>
+<?php
+// *** Validate request to login to this site.
+if (!isset($_SESSION)) {
+  session_start();
+}
+
+$loginFormAction = $_SERVER['PHP_SELF'];
+if (isset($_GET['accesscheck'])) {
+  $_SESSION['PrevUrl'] = $_GET['accesscheck'];
+}
+
+if (isset($_POST['email'])) {
+  $loginUsername=$_POST['email'];
+  $password=$_POST['psw'];
+  $MM_fldUserAuthorization = "";
+  $MM_redirectLoginSuccess = "index.php";
+  $MM_redirectLoginFailed = "login.php";
+  $MM_redirecttoReferrer = false;
+  mysql_select_db($database_katering, $katering);
+  
+  $LoginRS__query=sprintf("SELECT email, password FROM tbluser WHERE email=%s AND password=%s",
+    GetSQLValueString($loginUsername, "text"), GetSQLValueString($password, "text")); 
+   
+  $LoginRS = mysql_query($LoginRS__query, $katering) or die(mysql_error());
+  $loginFoundUser = mysql_num_rows($LoginRS);
+  if ($loginFoundUser) {
+     $loginStrGroup = "";
+    
+    //declare two session variables and assign them
+    $_SESSION['MM_Username'] = $loginUsername;
+    $_SESSION['MM_UserGroup'] = $loginStrGroup;       
+
+    if (isset($_SESSION['PrevUrl']) && false) {
+      $MM_redirectLoginSuccess = $_SESSION['PrevUrl'];  
+    }
+    header("Location: " . $MM_redirectLoginSuccess );
+  }
+  else {
+    header("Location: ". $MM_redirectLoginFailed );
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -107,10 +229,11 @@
                  <form action="/action_page.php">
 
                  <small><b>Log Masuk Admin</b></small>
+                 <form ACTION="<?php echo $loginFormAction; ?>" METHOD="POST" class="">
 
                   <div class="container">
-                    <label><b>Emel</b></label>
-                    <input type="text" placeholder="Emel Pengguna" name="uname" required>
+                    <label><b>Nama Pengguna</b></label>
+                    <input type="text" placeholder="Nama Pengguna" name="email" required>
 
                     <label><b>Kata Laluan</b></label>
                     <input type="password" placeholder="Kata Laluan" name="psw" required>
@@ -119,7 +242,7 @@
                     <input type="checkbox" checked="checked"> Ingat saya
                   </div>
                 </form>
-                
+    
                 </div>
             </div>
         </div>
