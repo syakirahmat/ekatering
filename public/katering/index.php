@@ -41,6 +41,7 @@
             <div class="navbar-header">
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
                 <a class="navbar-brand" href="index.php">E-KATERING UTHM</a>
+
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -49,13 +50,19 @@
                         <a href="index.php">Utama</a>
                     </li>
                     <li>
-                        <a href="cariankaterer.php">Carian Katerer</a>
+                        <a href="cariankaterer.php">Cari Katerer</a>
                     </li>
                     <li>
-                        <a href="menu.php">Menu Makanan</a>
+                        <a href="menu.php">Menu</a>
                     </li>
                     <li>
                         <a href="tempahan.php">Tempahan</a>
+                    </li>
+                    <li>
+                        <a href="registercaterer.php">Daftar</a>
+                    </li>
+                    <li>
+                        <a href="logincaterer.php">Log Masuk</a>
                     </li>
                 </ul>
             </div>
