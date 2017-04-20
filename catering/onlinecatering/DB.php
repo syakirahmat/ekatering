@@ -96,23 +96,6 @@ function toDateTime($string, $format = "Y-m-d H:i:s") {
 	return date($format, strtotime($string));
 }
 
-function sendSMS($toNumber, $message){
-	$url = 'https://mexists:8238Gt@walm.cryptical.tech/api/smsSend';
-	$params = "toNumber=$toNumber&message=$message";
-	$user_agent = "Mozilla/5.0 (compatible; MSIE 5.01; Windows NT 5.0)";
-	$ch = curl_init();
-	curl_setopt($ch, CURLOPT_POST,1);
-	curl_setopt($ch, CURLOPT_POSTFIELDS,$params);
-	curl_setopt($ch, CURLOPT_URL,$url);
-	curl_setopt($ch, CURLOPT_USERAGENT, $user_agent);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
-
-	$result=curl_exec ($ch);
-	curl_close ($ch);
-
-	return $result;
-}
-
 function d($mixed = null, $die = true) {
 	echo '<pre>';
 	var_dump($mixed);
