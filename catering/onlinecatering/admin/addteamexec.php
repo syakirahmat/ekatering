@@ -7,7 +7,7 @@ $KATERER = $_POST['power'];
 // query
 $sql = "INSERT INTO user(username,password,power) VALUES (:a,:b,:KATERER)";
 $q = $db->prepare($sql);
-$q->execute(array(':a'=>$mm,':b'=>$ss,':KATERER'=>$KATERER));
+$q->execute([':a' => $mm, ':b' => $ss, ':KATERER' => $KATERER]);
 header("location: team.php");
 
 

@@ -11,7 +11,7 @@ $sql = "UPDATE user
         SET username=?, password=?
 		WHERE id=?";
 $q = $db->prepare($sql);
-$q->execute(array($mm,$ss,$id));
+$q->execute([$mm, $ss, $id]);
 header("location: team.php");
 
 ?>

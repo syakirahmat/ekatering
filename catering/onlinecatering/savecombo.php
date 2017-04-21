@@ -13,7 +13,7 @@ $sql = "UPDATE reservation
         SET combo=?
 		WHERE res_id=?";
 $q = $db->prepare($sql);
-$q->execute(array($ss,$mm));
+$q->execute([$ss, $mm]);
 header("location: portal.php?res=$mm&mcat=$aa&additional=$bnbnb");
 
 ?>

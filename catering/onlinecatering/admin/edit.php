@@ -14,7 +14,7 @@ $sql = "UPDATE menu
         SET name=?, description=?, price=?, mcat=?, scat=?
 		WHERE id=?";
 $q = $db->prepare($sql);
-$q->execute(array($name,$description,$price,$mm,$ss,$id));
+$q->execute([$name, $description, $price, $mm, $ss, $id]);
 header("location: menu.php");
 
 ?>

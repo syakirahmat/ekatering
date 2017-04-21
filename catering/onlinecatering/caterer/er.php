@@ -11,7 +11,7 @@ $sql = "UPDATE reservation
         SET team=?
 		WHERE res_id=?";
 $q = $db->prepare($sql);
-$q->execute(array($mm,$id));
+$q->execute([$mm, $id]);
 header("location: index.php");
 
 ?>

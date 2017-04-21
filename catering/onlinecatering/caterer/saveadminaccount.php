@@ -7,7 +7,7 @@ $a = $_POST['power'];
 // query
 $sql = "INSERT INTO user (username,password,power) VALUES (:a,:b,:c)";
 $q = $db->prepare($sql);
-$q->execute(array(':a'=>$mm,':b'=>$ss,':c'=>$a));
+$q->execute([':a' => $mm, ':b' => $ss, ':c' => $a]);
 header("location: adminaccount.php");
 
 

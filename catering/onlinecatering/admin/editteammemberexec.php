@@ -11,7 +11,7 @@ $sql = "UPDATE catering_member
         SET ct_name=?, ctm_member=?
 		WHERE ctm_id=?";
 $q = $db->prepare($sql);
-$q->execute(array($mm,$ss,$id));
+$q->execute([$mm, $ss, $id]);
 header("location: teammember.php");
 
 ?>

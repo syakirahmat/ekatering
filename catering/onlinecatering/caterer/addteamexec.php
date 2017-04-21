@@ -6,7 +6,7 @@ $ss = $_POST['leader'];
 // query
 $sql = "INSERT INTO catering_team (ct_name,ct_leader) VALUES (:a,:b)";
 $q = $db->prepare($sql);
-$q->execute(array(':a'=>$mm,':b'=>$ss));
+$q->execute([':a' => $mm, ':b' => $ss]);
 header("location: team.php");
 
 

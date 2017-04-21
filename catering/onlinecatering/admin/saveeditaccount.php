@@ -12,7 +12,7 @@ $sql = "UPDATE user
         SET username=?, password=?, power=?
 		WHERE id=?";
 $q = $db->prepare($sql);
-$q->execute(array($mm,$ss,$a,$id));
+$q->execute([$mm, $ss, $a, $id]);
 header("location: adminaccount.php");
 
 ?>

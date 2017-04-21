@@ -1,13 +1,14 @@
 <?php
 date_default_timezone_set("Asia/Kuala_Lumpur");
 session_start();
+include_once "functions.php";
 
 class DB {
 	var $db;
 	var $db_tableName;
 	var $db_servername = "localhost";
 	var $db_username = "root";
-	var $db_password = "";
+	var $db_password = "password";
 	var $db_dbname = "dng_comedor";
 	var $sql = "";
 	var $is_new_record = true;
@@ -91,130 +92,117 @@ class DB {
 	}
 }
 
-function toDateTime($string, $format = "Y-m-d H:i:s") {
-	//$string = str_replace("/", "-", $string);
-	return date($format, strtotime($string));
-}
-
-function d($mixed = null, $die = true) {
-	echo '<pre>';
-	var_dump($mixed);
-	echo '</pre>';
-	if ($die)
-		die();
-	return null;
-}
-
 
 ?>
 
 
 <?php
+/**
+ * Examples to use this class functions
+ */
+function usage_example() {
 	/**
-	* Examples to use this class functions
-	*/
-	function usage_example(){
-		/**
-		* INSERT example
-		*/
-		// INSERT INTO users(username, password, email) VALUES('admin', MD5('password'), 'admin@email.com');
-		$_POST["users"]["username"] = "admin";
-		$_POST["users"]["password"] = md5("password");
-		$_POST["users"]["email"] = "admin@email.com";
-		$UserModel = new DB("users");
-		$UserModel->insert($_POST["users"]);
-	
-		/**
-		* SELECT example
-		*/
-		
-		// SELECT * FROM users;
-		$UserModel = new DB("users");
-		$users = $User->findAll();
-		foreach($users as $user){
-			echo $user->username;
-			echo $user->password;
-			echo $user->email;
-		}
-		
-		// SELECT * FROM users WHERE username = 'admin';
-		$UserModel = new DB("users");
-		$users = $User->findAll("username='admin'");
-		foreach($users as $user){
-			echo $user->username;
-			echo $user->password;
-			echo $user->email;
-		
-		}
-		
-		// SELECT * FROM users WHERE id=1;
-		$id=1;
-		$UserModel = new DB("users");
-		$user = $User->findOne($id);
+	 * INSERT example
+	 */
+	// INSERT INTO users(username, password, email) VALUES('admin', MD5('password'), 'admin@email.com');
+	$_POST["users"]["username"] = "admin";
+	$_POST["users"]["password"] = md5("password");
+	$_POST["users"]["email"] = "admin@email.com";
+	$UserModel = new DB("users");
+	$UserModel->insert($_POST["users"]);
+
+	/**
+	 * SELECT example
+	 */
+
+	// SELECT * FROM users;
+	$UserModel = new DB("users");
+	$users = $UserModel->findAll();
+	foreach ($users as $user) {
 		echo $user->username;
 		echo $user->password;
 		echo $user->email;
-	
-		// SELECT * FROM users WHERE username='admin' LIMIT 1;
-		$UserModel = new DB("users");
-		$user = $User->find("username='admin'");
-		echo $user->username;
-		echo $user->password;
-		echo $user->email;
-		
-		
-		/**
-		* UPDATE example
-		*/
-		
-		// UPDATE users SET password=MD5('password'), email='admin@email.com' WHERE id=1;
-		$id = 1;
-		$UserModel = new DB("users");
-		$user = $UserModel->findOne($id);
-		$user->password = md5("password");
-		$user->email = "admin@email.com";
-		$UserModel->update($user);
-		
-		// UPDATE users SET password=MD5('password'), email='admin@email.com'
-		$UserModel = new DB("users");
-		$users = $UserModel->findAll();
-		foreach($users as $user){
-			$user->password = md5("password");
-			$user->email = "admin@email.com";
-			$UserModel->update($user);
-		}
-		
-		// UPDATE users SET password=MD5('password'), email='admin@email.com' WHERE username = 'admin';
-		$UserModel = new DB("users");
-		$users = $User->findAll("username='admin'");
-		foreach($users as $user){
-			$user->password = md5("password");
-			$user->email = "admin@email.com";
-			$UserModel->update($user);	
-		}
-		
-		// UPDATE users SET password=MD5('password'), email='admin@email.com' WHERE username = 'admin';
-		$UserModel = new DB("users");
-		$user = $User->find("username='admin'");
-		$user->password = md5("password");
-		$user->email = "admin@email.com";
-		$UserModel->update($user);
-		
-		/**
-		* DELETE example
-		*/
-		// DELETE FROM users WHERE id=1;
-		$id=1;
-		$UserModel = new DB("users");
-		$user = $User->findOne($id);
-		$UserModel->delete($user);
-		
-		// DELETE FROM users WHERE username = 'admin';
-		$UserModel = new DB("users");
-		$users = $User->findAll("username='admin'");
-		foreach($users as $user){
-			$UserModel->delete($user);	
-		}
 	}
+
+	// SELECT * FROM users WHERE username = 'admin';
+	$UserModel = new DB("users");
+	$users = $UserModel->findAll("username='admin'");
+	foreach ($users as $user) {
+		echo $user->username;
+		echo $user->password;
+		echo $user->email;
+
+	}
+
+	// SELECT * FROM users WHERE id=1;
+	$id = 1;
+	$UserModel = new DB("users");
+	$user = $UserModel->findOne($id);
+	echo $user->username;
+	echo $user->password;
+	echo $user->email;
+
+	// SELECT * FROM users WHERE username='admin' LIMIT 1;
+	$UserModel = new DB("users");
+	$user = $UserModel->find("username='admin'");
+	echo $user->username;
+	echo $user->password;
+	echo $user->email;
+
+
+	/**
+	 * UPDATE example
+	 */
+
+	// UPDATE users SET password=MD5('password'), email='admin@email.com' WHERE id=1;
+	$id = 1;
+	$UserModel = new DB("users");
+	$user = $UserModel->findOne($id);
+	$user->password = md5("password");
+	$user->email = "admin@email.com";
+	$UserModel->update($user);
+
+	// UPDATE users SET password=MD5('password'), email='admin@email.com'
+	$UserModel = new DB("users");
+	$users = $UserModel->findAll();
+	foreach ($users as $user) {
+		$user->password = md5("password");
+		$user->email = "admin@email.com";
+		$UserModel->update($user);
+	}
+
+	// UPDATE users SET password=MD5('password'), email='admin@email.com' WHERE username = 'admin';
+	$UserModel = new DB("users");
+	$users = $UserModel->findAll("username='admin'");
+	foreach ($users as $user) {
+		$user->password = md5("password");
+		$user->email = "admin@email.com";
+		$UserModel->update($user);
+	}
+
+	// UPDATE users SET password=MD5('password'), email='admin@email.com' WHERE username = 'admin';
+	$UserModel = new DB("users");
+	$user = $UserModel->find("username='admin'");
+	$user->password = md5("password");
+	$user->email = "admin@email.com";
+	$UserModel->update($user);
+
+	/**
+	 * DELETE example
+	 */
+	// DELETE FROM users WHERE id=1;
+	$id = 1;
+	$UserModel = new DB("users");
+	$user = $UserModel->findOne($id);
+	$UserModel->delete($user);
+
+	// DELETE FROM users WHERE username = 'admin';
+	$UserModel = new DB("users");
+	$users = $UserModel->findAll("username='admin'");
+	foreach ($users as $user) {
+		$UserModel->delete($user);
+	}
+}
+
 ?>
 
