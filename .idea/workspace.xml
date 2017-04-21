@@ -1,122 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76fd096e-1b62-4c44-b347-55b28aa17128" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/DB.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/DB.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/about-us.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/about-us.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/add.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/addadmin.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/addadmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/addmenu.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/addmenu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/addteam.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/addteam.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/addteamexec.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/addteamexec.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/addteammember.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/addteammember.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/admin.css" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/adminaccount.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/adminaccount.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/auth.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/backup/export.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/backup/export.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/backup/import.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/backup/import.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/deletemenu.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/deletemenu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/deleteorder.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/deleteorder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/deletereservation.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/deletereservation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/deletesuggestion.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/deletesuggestion.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/deleteteadmin.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/deleteteadmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/deleteteam.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/deleteteam.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/deleteteammember.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/deleteteammember.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/details.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/details.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/edit.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/editmenu.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/editmenu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/editstatus.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/editstatus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/editteaccount.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/editteaccount.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/editteam.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/editteam.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/editteamexec.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/editteamexec.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/editteammember.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/editteammember.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/editteammemberexec.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/editteammemberexec.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/er.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/er.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/eteam.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/eteam.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/index.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/js/application.js" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/js/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/menu.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/menuorders.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/menuorders.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/saveadminaccount.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/saveadminaccount.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/saveeditaccount.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/saveeditaccount.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/savestatus.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/savestatus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/saveteammember.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/saveteammember.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/src/facebox.css" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/src/facebox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/src/facebox.js" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/src/facebox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/suggestions.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/suggestions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/team.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/team.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/admin/teammember.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/admin/teammember.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/add.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/addadmin.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/addadmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/addmenu.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/addmenu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/addteam.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/addteam.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/addteamexec.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/addteamexec.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/addteammember.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/addteammember.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/admin.css" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/adminaccount.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/adminaccount.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/auth.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/backup/export.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/backup/export.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/backup/import.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/backup/import.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/deletemenu.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/deletemenu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/deleteorder.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/deleteorder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/deletereservation.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/deletereservation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/deletesuggestion.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/deletesuggestion.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/deleteteadmin.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/deleteteadmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/deleteteam.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/deleteteam.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/deleteteammember.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/deleteteammember.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/details.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/details.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/edit.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/editmenu.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/editmenu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/editprofile.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/editprofile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/editstatus.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/editstatus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/editteaccount.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/editteaccount.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/editteam.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/editteam.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/editteamexec.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/editteamexec.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/editteammember.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/editteammember.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/editteammemberexec.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/editteammemberexec.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/er.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/er.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/eteam.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/eteam.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/index.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/js/application.js" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/js/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/menu.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/menuorders.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/menuorders.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/profile.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/saveadminaccount.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/saveadminaccount.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/saveeditaccount.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/saveeditaccount.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/savestatus.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/savestatus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/saveteammember.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/saveteammember.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/src/facebox.css" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/src/facebox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/src/facebox.js" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/src/facebox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/suggestions.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/suggestions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/team.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/team.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/caterer/teammember.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/caterer/teammember.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/catering.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/catering.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/checkavailability.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/checkavailability.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/checkavailabilitycondition.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/checkavailabilitycondition.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/combo.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/combo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/connect.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/connect.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/contact.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/css/style1.css" afterPath="$PROJECT_DIR$/catering/onlinecatering/css/style1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/details.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/details.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/functionhall.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/functionhall.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/functionhalldetails.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/functionhalldetails.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/index.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/inquiry.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/inquiry.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/login.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/loginform.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/loginform.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/menu.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/menuboard.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/menuboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/menudetails.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/menudetails.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/part2.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/part2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/portal.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/portal.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/reservation.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/reservation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/savecombo.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/savecombo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/savecomment.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/savecomment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/savemenu.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/savemenu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/tcal.css" afterPath="$PROJECT_DIR$/catering/onlinecatering/tcal.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/tcal.js" afterPath="$PROJECT_DIR$/catering/onlinecatering/tcal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catering/onlinecatering/terms_condition.php" afterPath="$PROJECT_DIR$/catering/onlinecatering/terms_condition.php" />
-    </list>
+    <list default="true" id="76fd096e-1b62-4c44-b347-55b28aa17128" name="Default" comment="" />
     <ignored path="ekatering.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -175,7 +60,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catering/onlinecatering/admin/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -183,6 +68,18 @@
               <folding>
                 <element signature="n#div#0;n#!!top" expanded="false" />
                 <marker date="1492779528287" expanded="true" signature="1241:1283" ph="SELECT * FRO... reservation" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="teammember.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/catering/onlinecatering/admin/teammember.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2073">
+              <caret line="129" column="7" selection-start-line="129" selection-start-column="7" selection-end-line="129" selection-end-column="7" />
+              <folding>
+                <marker date="1492771005964" expanded="true" signature="2467:2496" ph="SELECT * FRO... catering_member" />
               </folding>
             </state>
           </provider>
@@ -395,15 +292,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1492770194260</updated>
-      <workItem from="1492770196231" duration="5197000" />
+      <workItem from="1492770196231" duration="5693000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5197000" />
+    <option name="totallyTimeSpent" value="5693000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -677,6 +574,16 @@
           <folding>
             <element signature="n#div#0;n#!!top" expanded="false" />
             <marker date="1492779528287" expanded="true" signature="1241:1283" ph="SELECT * FRO... reservation" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catering/onlinecatering/admin/teammember.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2073">
+          <caret line="129" column="7" selection-start-line="129" selection-start-column="7" selection-end-line="129" selection-end-column="7" />
+          <folding>
+            <marker date="1492771005964" expanded="true" signature="2467:2496" ph="SELECT * FRO... catering_member" />
           </folding>
         </state>
       </provider>
