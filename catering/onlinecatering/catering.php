@@ -30,13 +30,13 @@ function createRandomPassword() {
 		$pass = $pass . $tmp;
 
 		$i++;
-		/
+		
 	}
 	return $pass;
 }
 
 $tc = createRandomPassword();
-if ((($mcat == 'breakfast') AND ($nopax > 99)) OR (($mcat == 'teatime') AND ($nopax > 49)) OR (($mcat == 'lunch_and_dinner') AND ($nopax > 29))) {
+if ((($mcat == 'sarapan') AND ($nopax > 99)) OR (($mcat == 'minum petang') AND ($nopax > 49)) OR (($mcat == 'makan tengahari/malam') AND ($nopax > 29))) {
 	include('connect.php');
 	$sql = "INSERT INTO reservation (res_id,firstname,address,motif,type_events,type_res,date,pax,contact,venueaddress,type_catering,lastname,status,time,resdate) VALUES (:a,:b,:c,:d,:e,:f,:g,:h,:i,:j,:k,:l,:m,:n,:z)";
 	$q = $db->prepare($sql);

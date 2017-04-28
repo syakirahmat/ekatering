@@ -2,7 +2,7 @@
 /* Database config */
 $db_host = 'localhost';
 $db_user = 'root';
-$db_pass = 'password';
+$db_pass = '';
 $db_database = 'dng_comedor';
 
 /* End config */

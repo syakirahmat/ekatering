@@ -15,11 +15,11 @@ include_once "DB.php";
 			<h1><a href="">E-KATERING<br><span style="font-family: arial; font-size: 15px;">UTHM</span></a></h1>
 			<nav>
 				<ul class="menu">
-					<li><a href="index.php">Utama</a></li>
+					<li><a class="active" href="index.php">Utama</a></li>
 					<li><a href="menu.php">Menu</a></li>
 					<li><a href="reservation.php">Tempah</a></li>
 					<li><a href="checkavailability.php">Cari Katerer</a></li>
-					<li><a class="active" href="contact.php">Hubungi Kami</a></li>
+					<li><a href="contact.php">Hubungi Kami</a></li>
 					<li><a href="loginform.php">log Masuk</a></li>
 				</ul>
 				</ul>

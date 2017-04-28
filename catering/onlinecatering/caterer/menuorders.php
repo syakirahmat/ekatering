@@ -1,75 +1,58 @@
-<?php
-require_once('auth.php');
-?>
-<html>
-<head>
-	<title>
-		E-KATERING UTHM
-	</title>
-	<!-- CSS Style -->
-	<link rel="stylesheet" href="admin.css">
-	<script src="dng_comedor.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/application.js" type="text/javascript" charset="utf-8"></script>
-	<!--sa poip up-->
-	<link href="src/facebox.css" media="screen" rel="stylesheet" type="text/css"/>
-	<script src="lib/jquery.js" type="text/javascript"></script>
-	<script src="src/facebox.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$('a[rel*=facebox]').facebox({
-				loadingImage: 'src/loading.gif',
-				closeImage: 'src/closelabel.png'
-			})
-		})
-	</script>
-</head>
-<body>
-<div id="top">
-	<div class="logo">
-		<img src="../images/logo.png"> <span
-			style="float:right; color:#FFFFFF; font-weight:bold; display: inline-block; padding: 20px 0 0 20px;">Hello <?php echo $_SESSION['USERNAME'] ?></span>
-	</div>
-</div>
+<?php include_once "header.php" ?>
+
 <div class="container  clearfix">
 	<div class="one-third1 column">
 		<ul>
-			<li><a href="index.php"><img alt="" src="img/home.png"><span>Utama</span></a></li>
-			<li><a href="menu.php"><img alt="" src="img/page.png"><span>Menu</span></a></li>
-			<li class="active"><a href="menuorders.php"><img alt="" src="img/menuorder.png"><span>Tempahan</span></a>
-			</li>
-			<li><a href="profile.php"><img alt="" src="img/user-128.png"><span>Profil</span></a></li>
+			<li class="active"><a href="index.php"><img alt="" src="img/home.png"><span>Utama</span></a></li>
+			<li><a href="menuorders.php"><img alt="" src="img/page.png"><span>Tempahan</span></a></li>
+            <li><a href="menu.php"><img alt="" src="img/page.png"><span>Menu</span></a></li>
+			<li><a href="profile.php"><img alt="" src="img/user-128.png"><span> Profil</span></a></li>
 			<li><a href="../index.php"><img alt="" src="img/logout.png"><span>Log Keluar</span></a></li>
 		</ul>
 	</div>
+    <div>
+
+
+        <select>
+            <option value="" disabled="disabled" selected="selected">ID Tempahan</option>
+            <option value="Id">20170427A7E9</option>
+            <option value="Id">201704277E69</option>
+            <option value="Id">201704273A45</option>
+            <option value="Id">20170427ABA3</option>
+            <option value="Id">20170427D5AC</option>
+            <option value="Id">201704270D26</option>
+            <option value="Id">2017042719DF</option>
+        </select>
+    
+    </div>
 	<div class="two-thirds1 column">
 		<div class="thewraper">
+            
+                
 
 			<table id="resultTable" data-responsive="table">
 				<thead>
 				<tr>
 					<th width="20%"> ID Tempahan</th>
-					<th width="60%"> Menu</th>
+					<th width="60%"> Kategori 1</th>
+                    <th width="60%"> Kategori 2</th>
+                    <th width="60%"> Nama Menu</th>
 					<th width="20%"> Tindakan</th>
 				</tr>
 				</thead>
 				<tbody>
 				<?php
 				include('../connect.php');
-				$result = $db->prepare("SELECT * FROM menu_res ORDER BY id DESC");
+                $res_id = $_GET['res_id'];
+				$result = $db->prepare("SELECT * FROM menu_res WHERE res_id=$res_id ORDER BY id DESC");
 				$result->execute();
 				for ($i = 0; $row = $result->fetch(); $i++) {
 					?>
 					<tr class="record">
 						<td><?php echo $row['res_id']; ?></td>
-						<td><?php
-							$menumenu = $row['menu'];
-							$results = $db->prepare("SELECT * FROM menu WHERE id= :userid");
-							$results->bindParam(':userid', $menumenu);
-							$results->execute();
-							for ($i = 0; $rows = $results->fetch(); $i++) {
-								echo $rows['name'];
-							}
-							?></td>
+						<td><?php echo $row['cat1']; ?></td>
+						<td><?php echo $row['cat2']; ?></td>
+                        <td><?php echo $row['menu']; ?></td>
 						<td><a href="#" id="<?php echo $row['id']; ?>" class="delbutton"
 						       title="Click To Delete">Delete</a></td>
 					</tr>

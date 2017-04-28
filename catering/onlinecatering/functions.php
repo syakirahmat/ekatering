@@ -1,10 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Mizan
- * Date: 21-Apr-17
- * Time: 8:20 PM
- */
+function generateReservationID(){
+    $today = date("Ymd");
+    $rand = strtoupper(substr(uniqid(sha1(time())),0,4));
+    return $unique = $today . $rand;
+}
+
 function toDateTime($string, $format = "Y-m-d H:i:s") {
 	//$string = str_replace("/", "-", $string);
 	return date($format, strtotime($string));

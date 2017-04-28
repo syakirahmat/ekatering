@@ -24,16 +24,14 @@
 			<table id="resultTable" data-responsive="table">
 				<thead>
 				<tr>
-					<th width="3%"> Tarikh</th>
 					<th width="3%"> Tarikh Tempahan</th>
 					<th width="21%"> ID Tempahan</th>
 					<th width="11%"> Nama</th>
 					<th width="11%"> No.Telefon</th>
 					<th width="11%"> Alamat</th>
 					<th width="5%"> Pax</th>
-					<th width="11%"> Katering Pilihan</th>
+					<th width="11%"> Katerer Pilihan</th>
 					<th width="11%"> Status</th>
-					<th width="12%"> tindakan</th>
 				</tr>
 				</thead>
 				<tbody>
@@ -45,16 +43,14 @@
 				for ($i = 0; $row = $result->fetch(); $i++) {
 					?>
 					<tr class="record">
-						<td><?php echo $row['resdate']; ?></td>
 						<td><?php echo $row['date']; ?></td>
-						<td><?php echo $row['res_id']; ?></td>
-						<td><?php echo $row['firstname']; ?>&nbsp;<?php echo $row['lastname']; ?></td>
+						<td><?php echo $row['res_no']; ?></td>
+						<td><?php echo $row['name']; ?></td>
 						<td><?php echo $row['contact']; ?></td>
 						<td><?php echo $row['address']; ?></td>
 						<td><?php echo $row['pax']; ?></td>
-						<td><?php echo $row['team']; ?></td>
+						<td><?php echo $row['caterer_id']; ?></td>
 						<td><?php echo $row['status']; ?></td>
-						<td><a rel="facebox" href="details.php?res=<?php echo $row['res_id']; ?>">Butiran</a><br></td>
 					</tr>
 					<?php
 				}

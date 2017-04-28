@@ -16,10 +16,11 @@ if ($User) {
 	session_write_close();
 
 	if ($_SESSION['user']->power == 'ADMIN') {
-		header("location: caterer/index.php");
+		header("location: admin/index.php");
 	} else {
 		echo "<script>alert('Selamat Datang ' + {$_SESSION['user']->username})</script>";
-		header("location: ./");
+		echo "<script>window.location.href='caterer/index.php'</script>";
+		//header("location: caterer/index.php");
 	}
 	exit();
 } else {
@@ -27,8 +28,9 @@ if ($User) {
 	$endTime = date('H:i:s');
 	$FailedModel = new DB('failed');
 	$Failed = $FailedModel->find();
-	$Failed->attempt = $Failed->attempt + 1;
+	$Failed->attempt = intval($Failed->attempt) + 1;
 	$Failed->time = $endTime;
+	$FailedModel->update($Failed);
 	header("location: loginform.php");
 
 	exit();

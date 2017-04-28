@@ -1,35 +1,5 @@
-<?php
-require_once('auth.php');
-?>
-<html>
-<head>
-	<title>
-		E-KATERING UTHM
-	</title>
-	<!-- CSS Style -->
-	<link rel="stylesheet" href="admin.css">
-	<script src="dng_comedor.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/application.js" type="text/javascript" charset="utf-8"></script>
-	<!--sa poip up-->
-	<link href="src/facebox.css" media="screen" rel="stylesheet" type="text/css"/>
-	<script src="lib/jquery.js" type="text/javascript"></script>
-	<script src="src/facebox.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$('a[rel*=facebox]').facebox({
-				loadingImage: 'src/loading.gif',
-				closeImage: 'src/closelabel.png'
-			})
-		})
-	</script>
-</head>
-<body>
-<div id="top">
-	<div class="logo">
-		<img src=""> <span
-			style="float:right; color:#FFFFFF; font-weight:bold; display: inline-block; padding: 20px 0 0 20px;">Hello <?php echo $_SESSION['USERNAME'] ?></span>
-	</div>
-</div>
+<?php include_once "header.php" ?>
+
 <div class="container  clearfix">
 	<div class="one-third1 column">
 		<ul>
@@ -85,9 +55,5 @@ require_once('auth.php');
 		</div>
 	</div>
 </div>
-<div id="footer">
-	<div class="copyrights">&copy; Copyright e-katering UTHM 2017</div>
-</div>
 
-</body>
-</html>
+<?php include_once "footer.php" ?>

@@ -10,26 +10,7 @@
 							Cari Katerer
 						</div>
 						<?php
-						include('connect.php');
-						$result = $db->prepare("SELECT * FROM falied");
-						$result->execute();
-						for ($i = 0; $row = $result->fetch(); $i++) {
-							$gcvgvc = $row['attempt'];
-							$tttt = $row['time'];
-						}
-						$kjkjk = date('H:i:s');
-						$time1 = strtotime($kjkjk);
-						$time2 = strtotime($tttt);
-						$diff = $time1 - $time2;
-						if ($diff > 59) {
-							$mm = 0;
-							$sql = "UPDATE falied 
-        SET attempt=?";
-							$q = $db->prepare($sql);
-							$q->execute([$mm]);
-
-						}
-						if ($gcvgvc <= 2) {
+	
 							?>
 							<form action="chechavaibilitycondition.php" method="post">
 								<?php
@@ -50,7 +31,7 @@
 								</dl>
 							</form>
 							<?php
-						}
+						
 						if ($gcvgvc >= 3) {
 							echo '<span style="color: #ffffff; font-weight: bold; padding-left: 20px;width: 287px;display: inline-block;">You Have Reach The Maximum Login Attempts, Pls. Try after 30mins, <a href="loginform.php">Refresh</a> the page to try again.<span>';
 						}

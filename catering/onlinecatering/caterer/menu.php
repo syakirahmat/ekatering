@@ -33,9 +33,9 @@ require_once('auth.php');
 <div class="container  clearfix">
 	<div class="one-third1 column">
 		<ul>
-			<li><a href="index.php"><img alt="" src="img/home.png"><span>Tempahan</span></a></li>
-			<li class="active"><a class="active" href="menu.php"><img alt="" src="img/page.png"><span>Menu</span></a>
-			</li>
+			<li class="active"><a href="index.php"><img alt="" src="img/home.png"><span>Utama</span></a></li>
+			<li><a href="menuorders.php"><img alt="" src="img/page.png"><span>Tempahan </span></a></li>
+            <li><a href="menu.php"><img alt="" src="img/page.png"><span>Menu</span></a></li>
 			<li><a href="profile.php"><img alt="" src="img/user-128.png"><span> Profil</span></a></li>
 			<li><a href="../index.php"><img alt="" src="img/logout.png"><span>Log Keluar</span></a></li>
 		</ul>

@@ -1,12 +1,12 @@
 <?php
 include('../connect.php');
 $id = $_GET['id'];
-$result = $db->prepare("SELECT * FROM menu WHERE id= :userid");
+$result = $db->prepare("SELECT * FROM user WHERE id= :userid");
 $result->bindParam(':userid', $id);
 $result->execute();
 for ($i = 0; $row = $result->fetch(); $i++) {
 	?>
-	<form action="editprofileexec.php" method="POST">
+	<form action="editprofile2.php" method="POST">
 		<input type="hidden" name="id" value="<?php echo $id; ?>"/>
 		Nama Pengguna<br>
 		<input type="text" name="username" value="<?php echo $row['username']; ?>"/><br>
@@ -23,3 +23,4 @@ for ($i = 0; $row = $result->fetch(); $i++) {
 	<?php
 }
 ?>
+

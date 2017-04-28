@@ -11,7 +11,7 @@
 						</div>
 						<?php
 						include('connect.php');
-						$result = $db->prepare("SELECT * FROM falied");
+						$result = $db->prepare("SELECT * FROM failed");
 						$result->execute();
 						for ($i = 0; $row = $result->fetch(); $i++) {
 							$gcvgvc = $row['attempt'];
@@ -23,7 +23,7 @@
 						$diff = $time1 - $time2;
 						if ($diff > 59) {
 							$mm = 0;
-							$sql = "UPDATE falied 
+							$sql = "UPDATE failed 
         SET attempt=?";
 							$q = $db->prepare($sql);
 							$q->execute([$mm]);

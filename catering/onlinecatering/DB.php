@@ -8,7 +8,7 @@ class DB {
 	var $db_tableName;
 	var $db_servername = "localhost";
 	var $db_username = "root";
-	var $db_password = "password";
+	var $db_password = "";
 	var $db_dbname = "dng_comedor";
 	var $sql = "";
 	var $is_new_record = true;
@@ -89,6 +89,10 @@ class DB {
 	function delete($model) {
 		$this->sql = "DELETE FROM {$this->db_tableName} WHERE id=$model->id";
 		return $this->db->exec($this->sql);
+	}
+	
+	function assign($param){
+		return json_decode(json_encode($param, false), false);
 	}
 }
 
