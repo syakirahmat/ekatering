@@ -12,17 +12,22 @@
 	</div>
     <div>
 
-
-        <select>
-            <option value="" disabled="disabled" selected="selected">ID Tempahan</option>
-            <option value="Id">20170427A7E9</option>
-            <option value="Id">201704277E69</option>
-            <option value="Id">201704273A45</option>
-            <option value="Id">20170427ABA3</option>
-            <option value="Id">20170427D5AC</option>
-            <option value="Id">201704270D26</option>
-            <option value="Id">2017042719DF</option>
-        </select>
+        <form action="" method="get">
+            <select name="reservation_id">
+                <option value="" disabled="disabled" selected="selected">ID     Tempahan</option>
+                <?php
+                    $ReservationModel = new DB("reservation");
+                    $Reservations  = $ReservationModel->findAll("caterer_id=" . $_SESSION["user"]->id);
+                    foreach($Reservations as $Reservation){
+                        ?>
+                <option value="<?=$Reservation->id?>"><?=$Reservation->res_no?></option>
+                        <?php
+                    }
+                ?>
+            </select>
+            
+            <button type="submit" name="submit">Lihat Menu</button>
+        </form>
     
     </div>
 	<div class="two-thirds1 column">
@@ -43,22 +48,23 @@
 				<tbody>
 				<?php
 				include('../connect.php');
-                $res_id = $_GET['res_id'];
-				$result = $db->prepare("SELECT * FROM menu_res WHERE res_id=$res_id ORDER BY id DESC");
-				$result->execute();
-				for ($i = 0; $row = $result->fetch(); $i++) {
-					?>
-					<tr class="record">
-						<td><?php echo $row['res_id']; ?></td>
-						<td><?php echo $row['cat1']; ?></td>
-						<td><?php echo $row['cat2']; ?></td>
-                        <td><?php echo $row['menu']; ?></td>
-						<td><a href="#" id="<?php echo $row['id']; ?>" class="delbutton"
+                if(isset($_GET['reservation_id'])){
+                    $reservation_id = $_GET['reservation_id'];
+                    $MenuReservationModel = new DB("menu_res");
+                    $MenusReservation = $MenuReservationModel->findAll("res_id = " . $reservation_id);
+                    foreach($MenusReservation as $MenuReservation){
+                        ?>
+                    <tr class="record">
+						<td><?=$MenuReservation->res_id ?></td>
+						<td><?=$MenuReservation->cat1 ?></td>
+						<td><?=$MenuReservation->cat2 ?></td>
+                        <td><?=$MenuReservation->menu ?></td>
+						<td><a href="#" id="<?$MenuReservation->id ?>" class="delbutton"
 						       title="Click To Delete">Delete</a></td>
 					</tr>
-					<?php
-				}
-				?>
+                    <?php
+                    }
+                } ?>
 				</tbody>
 			</table>
 		</div>
